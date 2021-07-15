@@ -1,9 +1,15 @@
-import SignIn from './pages/SignIn';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { Main, Login } from './pages'
 
-function App() {
+const App: React.FC = () => {
   return (
-    <SignIn />
+    <BrowserRouter>
+      <Switch>
+        <Route path='/' component={Main} exact />
+        <Route path='/login' component={Login} exact />
+      </Switch>
+    </BrowserRouter>
   )
 }
 
-export default App;
+export default App

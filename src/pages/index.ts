@@ -1,1 +1,2 @@
-export { default as sSignIn } from './SignIn'
+export { default as Main } from './Main'
+export { default as Login } from './Login'
