@@ -6,10 +6,10 @@ import ThemeProvider from '@material-ui/styles/ThemeProvider'
 import { theme } from './theme'
 
 ReactDOM.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <ThemeProvider theme={theme}>
       <App />
-    </ThemeProvider>
-  </React.StrictMode>,
+    </ThemeProvider>,
+  {/* </React.StrictMode>, */}
   document.getElementById('root')
 )
